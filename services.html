@@ -3,401 +3,295 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Suhani Beauty Parlour | Patna</title>
+<title>Our Services | Suhani Beauty Parlour</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+.page-banner{
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url('images/services-banner.jpg');
+    background-size:cover;
+    background-position:center;
+    height:350px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    text-align:center;
 }
 
-html{
-scroll-behavior:smooth;
+.page-banner h1{
+    font-size:50px;
 }
 
-body{
-background:#fff8fc;
-color:#333;
-}
-
-.navbar{
-position:fixed;
-top:0;
-width:100%;
-background:white;
-padding:15px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-box-shadow:0 2px 15px rgba(0,0,0,0.1);
-z-index:1000;
-}
-
-.logo{
-font-family:'Playfair Display',serif;
-font-size:32px;
-font-weight:700;
-color:#d63384;
-}
-
-.nav-links a{
-text-decoration:none;
-margin-left:25px;
-color:#333;
-font-weight:500;
-}
-
-.hero{
-height:100vh;
-background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
-url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1600&q=80');
-background-size:cover;
-background-position:center;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-color:white;
-}
-
-.hero-content h1{
-font-size:70px;
-font-family:'Playfair Display',serif;
-}
-
-.hero-content p{
-font-size:22px;
-margin:20px 0;
-}
-
-.btn{
-display:inline-block;
-padding:14px 35px;
-background:#d63384;
-color:white;
-text-decoration:none;
-border-radius:50px;
-font-weight:600;
-}
-
-section{
-padding:90px 8%;
+.service-section{
+    padding:80px 8%;
+    background:#fff;
 }
 
 .section-title{
-text-align:center;
-margin-bottom:50px;
+    text-align:center;
+    margin-bottom:50px;
 }
 
 .section-title h2{
-font-size:42px;
-font-family:'Playfair Display',serif;
-color:#d63384;
+    font-size:38px;
+    color:#d4af37;
 }
 
-.about{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:40px;
-align-items:center;
-}
-
-.about img{
-width:100%;
-border-radius:20px;
-}
-
-.services{
-background:white;
+.section-title p{
+    color:#666;
+    margin-top:10px;
 }
 
 .service-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
 }
 
-.service{
-background:#fff;
-padding:30px;
-border-radius:20px;
-text-align:center;
-box-shadow:0 5px 20px rgba(0,0,0,0.08);
-transition:.3s;
+.service-card{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:0.4s;
 }
 
-.service:hover{
-transform:translateY(-8px);
+.service-card:hover{
+    transform:translateY(-10px);
 }
 
-.service h3{
-color:#d63384;
-margin-bottom:10px;
+.service-card i{
+    font-size:50px;
+    color:#d4af37;
+    margin-bottom:20px;
 }
 
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:20px;
+.service-card h3{
+    margin-bottom:15px;
 }
 
-.gallery img{
-width:100%;
-height:300px;
-object-fit:cover;
-border-radius:15px;
-}
-
-.package-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:25px;
-}
-
-.package{
-background:white;
-padding:30px;
-border-radius:20px;
-text-align:center;
-box-shadow:0 5px 20px rgba(0,0,0,0.08);
-}
-
-.package h3{
-color:#d63384;
-margin-bottom:10px;
+.service-card p{
+    color:#666;
+    line-height:1.7;
 }
 
 .price{
-font-size:35px;
-font-weight:bold;
-color:#d63384;
-margin:15px 0;
+    margin-top:15px;
+    font-size:20px;
+    font-weight:bold;
+    color:#d4af37;
 }
 
-.contact{
-background:#111;
-color:white;
-text-align:center;
+.package-section{
+    background:#f9f9f9;
+    padding:80px 8%;
 }
 
-.contact h2{
-color:#f8b4d9;
-margin-bottom:20px;
+.package-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
 }
 
-footer{
-background:black;
-color:white;
-text-align:center;
-padding:20px;
+.package-card{
+    background:#fff;
+    border-radius:15px;
+    text-align:center;
+    padding:40px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
 }
 
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px 20px;
-border-radius:50px;
-text-decoration:none;
-font-weight:600;
+.package-card h3{
+    color:#d4af37;
+    margin-bottom:20px;
 }
 
-@media(max-width:768px){
-
-.about{
-grid-template-columns:1fr;
+.package-card ul{
+    list-style:none;
+    margin:20px 0;
 }
 
-.hero-content h1{
-font-size:42px;
+.package-card ul li{
+    padding:10px;
+    border-bottom:1px solid #eee;
 }
 
-.nav-links{
-display:none;
+.package-price{
+    font-size:32px;
+    font-weight:bold;
+    margin:20px 0;
 }
 
+.btn-book{
+    display:inline-block;
+    background:#d4af37;
+    color:#000;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:30px;
 }
 
+.cta{
+    padding:80px 8%;
+    text-align:center;
+    background:#000;
+    color:#fff;
+}
+
+.cta h2{
+    margin-bottom:20px;
+}
+
+.cta a{
+    background:#d4af37;
+    color:#000;
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:30px;
+    display:inline-block;
+}
 </style>
-</head>
 
+</head>
 <body>
 
-<nav class="navbar">
+<header>
+<div class="logo">Suhani Beauty Parlour</div>
 
-<div class="logo">
-💄 Suhani Beauty Parlour
-</div>
-
-<div class="nav-links">
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#gallery">Gallery</a>
-<a href="#packages">Packages</a>
-<a href="#contact">Contact</a>
-</div>
-
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
 </nav>
+</header>
 
-<section class="hero">
-
-<div class="hero-content">
-
-<h1>Suhani Beauty Parlour</h1>
-
-<p>Luxury Beauty, Bridal Makeup & Hair Care Studio</p>
-
-<a href="tel:7033719982" class="btn">Book Appointment</a>
-
-</div>
-
-</section>
-
-<section id="about">
-
-<div class="section-title">
-<h2>About Us</h2>
-</div>
-
-<div class="about">
-
-<img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=1000&q=80">
-
+<section class="page-banner">
 <div>
-
-<h3 style="font-size:32px;color:#d63384;margin-bottom:15px;">
-Welcome to Suhani Beauty Parlour
-</h3>
-
-<p>
-Suhani Beauty Parlour is one of the trusted beauty destinations in Patna.
-We specialize in Bridal Makeup, Party Makeup, Hair Styling, Facial,
-Skin Treatments and complete beauty care services.
-</p>
-
-<br>
-
-<p>
-Our mission is to provide a luxurious and relaxing beauty experience
-with modern beauty techniques and premium products.
-</p>
-
+<h1>Our Beauty Services</h1>
+<p>Professional Salon & Bridal Makeup Services</p>
 </div>
-
-</div>
-
 </section>
 
-<section id="services" class="services">
+<section class="service-section">
 
 <div class="section-title">
-<h2>Our Services</h2>
+<h2>Beauty & Salon Services</h2>
+<p>Premium Beauty Care For Every Occasion</p>
 </div>
 
 <div class="service-grid">
 
-<div class="service">
-<h3>👰 Bridal Makeup</h3>
-<p>HD & Airbrush Bridal Makeup</p>
+<div class="service-card">
+<i class="fas fa-ring"></i>
+<h3>Bridal Makeup</h3>
+<p>HD Makeup, Airbrush Makeup, Bridal Hairstyle and Complete Wedding Look.</p>
+<div class="price">₹8,999+</div>
 </div>
 
-<div class="service">
-<h3>💇 Hair Styling</h3>
-<p>Hair Cut, Hair Spa & Hair Color</p>
+<div class="service-card">
+<i class="fas fa-cut"></i>
+<h3>Hair Styling</h3>
+<p>Professional Hair Cut, Hair Styling, Hair Smoothening & Hair Coloring.</p>
+<div class="price">₹499+</div>
 </div>
 
-<div class="service">
-<h3>✨ Facial</h3>
-<p>Glow Facial & Skin Treatments</p>
+<div class="service-card">
+<i class="fas fa-spa"></i>
+<h3>Facial Treatment</h3>
+<p>Gold Facial, Diamond Facial, Hydra Facial & Skin Glow Treatments.</p>
+<div class="price">₹799+</div>
 </div>
 
-<div class="service">
-<h3>💄 Party Makeup</h3>
-<p>Professional Party Look</p>
+<div class="service-card">
+<i class="fas fa-hand-sparkles"></i>
+<h3>Manicure & Pedicure</h3>
+<p>Luxury Hand & Foot Care Treatments For Smooth Skin.</p>
+<div class="price">₹599+</div>
 </div>
 
-<div class="service">
-<h3>🖐 Manicure</h3>
-<p>Luxury Hand Care Services</p>
+<div class="service-card">
+<i class="fas fa-paint-brush"></i>
+<h3>Nail Art</h3>
+<p>Creative Nail Extensions, Gel Nails & Premium Nail Art Designs.</p>
+<div class="price">₹999+</div>
 </div>
 
-<div class="service">
-<h3>🦶 Pedicure</h3>
-<p>Premium Foot Care Services</p>
+<div class="service-card">
+<i class="fas fa-star"></i>
+<h3>Party Makeup</h3>
+<p>Professional Makeup For Engagement, Reception & Parties.</p>
+<div class="price">₹2,499+</div>
 </div>
-
-</div>
-
-</section>
-
-<section id="gallery">
-
-<div class="section-title">
-<h2>Beauty Gallery</h2>
-</div>
-
-<div class="gallery">
-
-<img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80">
-
-<img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=80">
-
-<img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=800&q=80">
 
 </div>
 
 </section>
 
-<section id="packages">
+<section class="package-section">
 
 <div class="section-title">
-<h2>Beauty Packages</h2>
+<h2>Bridal Packages</h2>
+<p>Choose Your Perfect Wedding Package</p>
 </div>
 
 <div class="package-grid">
 
-<div class="package">
+<div class="package-card">
+<h3>Silver Package</h3>
 
-<h3>Bridal Package</h3>
+<div class="package-price">₹9,999</div>
 
-<div class="price">₹9,999</div>
+<ul>
+<li>HD Makeup</li>
+<li>Hair Styling</li>
+<li>Basic Nail Art</li>
+<li>Draping</li>
+</ul>
 
-<p>HD Makeup</p>
-<p>Hair Styling</p>
-<p>Facial</p>
-<p>Nail Care</p>
-
-</div>
-
-<div class="package">
-
-<h3>Party Package</h3>
-
-<div class="price">₹2,999</div>
-
-<p>Party Makeup</p>
-<p>Hair Styling</p>
-<p>Skin Glow</p>
+<a href="contact.html" class="btn-book">Book Now</a>
 
 </div>
 
-<div class="package">
+<div class="package-card">
+<h3>Gold Package</h3>
 
-<h3>Monthly Package</h3>
+<div class="package-price">₹14,999</div>
 
-<div class="price">₹4,999</div>
+<ul>
+<li>Premium HD Makeup</li>
+<li>Luxury Hairstyle</li>
+<li>Nail Extensions</li>
+<li>Bridal Draping</li>
+<li>Touch-Up Kit</li>
+</ul>
 
-<p>Facial</p>
-<p>Cleanup</p>
-<p>Waxing</p>
-<p>Hair Spa</p>
+<a href="contact.html" class="btn-book">Book Now</a>
+
+</div>
+
+<div class="package-card">
+<h3>Platinum Package</h3>
+
+<div class="package-price">₹24,999</div>
+
+<ul>
+<li>Airbrush Makeup</li>
+<li>Premium Hairstyle</li>
+<li>Luxury Nail Art</li>
+<li>Premium Draping</li>
+<li>Complete Bridal Look</li>
+</ul>
+
+<a href="contact.html" class="btn-book">Book Now</a>
 
 </div>
 
@@ -405,33 +299,16 @@ with modern beauty techniques and premium products.
 
 </section>
 
-<section id="contact" class="contact">
-
-<h2>Contact Us</h2>
-
-<h3>Suhani Beauty Parlour</h3>
-
-<p>📍 Rajeev Nagar, Road No. 10, Patna - 24</p>
-
-<p>📞 7033719982</p>
-
-<p>⏰ Open Daily: 9 AM - 8 PM</p>
-
+<section class="cta">
+<h2>Ready For Your Transformation?</h2>
+<p>Book Your Appointment Today</p>
 <br>
-
-<a href="tel:7033719982" class="btn">Call Now</a>
-
+<a href="contact.html">Book Appointment</a>
 </section>
 
 <footer>
-
-© 2026 Suhani Beauty Parlour | All Rights Reserved
-
+<p>© 2026 Suhani Beauty Parlour | All Rights Reserved</p>
 </footer>
-
-<a href="https://wa.me/917033719982" class="whatsapp">
-WhatsApp Us
-</a>
 
 </body>
 </html>
